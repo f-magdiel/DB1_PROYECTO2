@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A6828AF7-25B6-877E-E0DC-1684EE0D5FA4" name="Carrera">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-16 23:56:49 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="3C4549EE-7A45-DB62-4D94-98268030CCB8">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-16 23:57:43 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="37CC9923-915E-8FCF-AAAA-D69F7264DDDA">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-16 23:59:31 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize> CHAR</dataTypeSize>
+<ownDataTypeParameters> CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C53DEB2F-BF97-4496-A72F-FA4B7FE12ACC" name="Carrera PK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-16 23:59:29 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C4549EE-7A45-DB62-4D94-98268030CCB8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="80168789-1A07-D3EB-3BC3-B035F1345C47" name="Nota_Estudiante">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:47:33 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="97366B33-A0E2-C6F5-239F-36B56AC95250">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:47:42 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nota" id="010EA920-48D3-1001-4D9F-CCF5C9A16AD8">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:48:08 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="26B9B7E2-B4AE-31A1-D2CE-5C38E44A411A">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-18 00:00:10 UTC</createdTime>
+<generatorID>ACBEED47-9117-34F5-D5E5-C332E3CAC1AC</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<referedAttribute>28021D5F-0E7B-8BD8-278F-AF9395E546C0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7EB1A30-BCB6-6F1D-52B0-D476C508C790" name="Nota_Estudiante PK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:48:04 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97366B33-A0E2-C6F5-239F-36B56AC95250</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A34B951E-A65E-82E8-90E2-7F3A3EB7DDDD" name="Curso">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:21:25 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Codigo" id="DE14CDF5-6642-B77D-4605-6C647C8AA2E0">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:21:53 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="AD9A03C5-44CC-15F2-2D27-A07AF6C9709E">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:23:03 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize> CHAR</dataTypeSize>
+<ownDataTypeParameters> CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cr_necesarios" id="D05261D5-7076-F4AD-FD1D-0B83D07D1F64">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:23:26 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cr_otorgados" id="663C5B5D-AFF2-25CE-DE45-10F093499F52">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:27:43 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Obligatorio" id="FF02932F-4000-D434-2F84-D9B5DAC81F1F">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:28:05 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="D46EF666-7501-CE53-C84D-4391C28CEBD2">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:57:48 UTC</createdTime>
+<generatorID>40FA42CF-3897-F685-A1F4-F790C5474E2B</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<referedAttribute>3C4549EE-7A45-DB62-4D94-98268030CCB8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94C81AC7-5378-5167-68FD-BD1790011464" name="Curso PK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-17 23:22:25 UTC</createdTime>
+<ownerDesignName>Logico</ownerDesignName>
+<engineerTo>
+<item key="8E9B1571-DD31-7025-1393-DD058FE655B6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE14CDF5-6642-B77D-4605-6C647C8AA2E0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
