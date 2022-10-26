@@ -18,4 +18,16 @@ BEGIN
 	
 END$$
 
-CALL crearcarrera('Sistemas');
+CALL crearcarrera('Ciencias Sistemas');
+CALL crearcarrera('Area Comun');
+CALL crearcarrera('Ingenieria en Ciencias y Sistemas');
+CALL crearcarrera('Ingenieria Civil');
+CALL crearcarrera('Ingenieria Quimica');
+CALL crearcarrera('Ingenieria Mecanica');
+CALL crearcarrera('Ingenieria Electrica');
+CALL crearcarrera('Ingenieria Industrial');
+CALL crearcarrera('Ingenieria Mecanica Electrica');
+CALL crearcarrera('Ingenieria Mecanica Industrial');
+CALL crearcarrera('Ingenieria Electronica');
+CALL crearcarrera('Ingenieria Ambiental');
+USE fiusac;

@@ -15,6 +15,6 @@ BEGIN
 	END IF;
 END$$
 
- CALL registroestudiante(201801449, 3275257541405,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'simon',1);
+ CALL registroestudiante(201801449, 3275257541405,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',1);
 
 

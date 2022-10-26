@@ -95,6 +95,8 @@ CREATE TABLE IF NOT EXISTS `FIUSAC`.`Curso_Habilitado` (
   `Docente_dpi` BIGINT(13) NOT NULL,
   `Curso_codigo` INT NOT NULL,
   PRIMARY KEY (`id_curso_habilitado`),
+  CONSTRAINT CHK_Curso_obligatorio_ciclos CHECK (ciclos RLIKE '^(1S|2S|VJ|VD)$'),
+  CONSTRAINT CHK_Curso_obligatorio_cupo CHECK (cupo > 0),
   INDEX `fk_Curso_Habilitado_Docente1_idx` (`Docente_dpi` ASC) VISIBLE,
   INDEX `fk_Curso_Habilitado_Curso1_idx` (`Curso_codigo` ASC) VISIBLE,
   CONSTRAINT `fk_Curso_Habilitado_Docente1`
