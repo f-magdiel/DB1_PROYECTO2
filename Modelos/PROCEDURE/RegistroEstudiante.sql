@@ -1,6 +1,9 @@
 DELIMITER $$
 CREATE PROCEDURE registroestudiante (carnet_in bigint(9), dpi_in bigint(13),nombres_in varchar(50), apellidos_in varchar(50), fecha_nacimiento_in date, correo_in varchar(50), telefono_in bigint(8), direccion_in varchar(50), id_carrera_in int)
 BEGIN
+	 DECLARE EXIT HANDLER FOR 3819 
+			SELECT CONCAT('OCURRIO UN ERROR AL REGISTRAR ESTUDIANTE') AS MENSAJE;
+        
 	IF validarestudiante(carnet_in) THEN
 		SELECT 'ESTUDIANTE YA EXISTE' AS MENSAJE;
     ELSE

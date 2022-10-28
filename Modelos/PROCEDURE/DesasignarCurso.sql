@@ -1,10 +1,13 @@
 DELIMITER $$
 CREATE PROCEDURE deasignarcurso (id_curso_in int, ciclos_in VARCHAR(50), seccion_in VARCHAR(1),carnet_in BIGINT(9))
 BEGIN
-
+	
+        
     DECLARE id_curso_buscar INT;
     DECLARE cont int;
     DECLARE cont_asignado int;
+	DECLARE EXIT HANDLER FOR 3819 
+	SELECT CONCAT('OCURRIO UN ERROR AL DESASIGNAR CURSO') AS MENSAJE;
     
 -- Validacion que exista curso
     IF validarcurso(id_curso_in)  THEN

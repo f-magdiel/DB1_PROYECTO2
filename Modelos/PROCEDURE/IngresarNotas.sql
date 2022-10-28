@@ -1,9 +1,13 @@
 DELIMITER $$
 CREATE PROCEDURE ingresarnotas (codigo_curso_in int, ciclos_in VARCHAR(50), seccion_in VARCHAR(1), carnet_in BIGINT(13), nota_in int)
 BEGIN
+	 
+        
     DECLARE cont_es int;
     DECLARE id_habili int;
     DECLARE cr_oto int;
+    DECLARE EXIT HANDLER FOR 3819 
+		SELECT CONCAT('OCURRIO UN ERROR AL INGRESAR NOTAS') AS MENSAJE;
 
     IF validarcurso(codigo_curso_in)THEN
         IF validarestudiante(carnet_in)  THEN

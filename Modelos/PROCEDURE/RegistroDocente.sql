@@ -1,6 +1,9 @@
 DELIMITER $$
 CREATE PROCEDURE registrodocente(dpi_in BIGINT(13), siif_in BIGINT(10), nombres_in VARCHAR(50), apellidos_in VARCHAR(50), fecha_nacimiento_in DATE, correo_in VARCHAR(50), telefono_in BIGINT(8), direccion_in VARCHAR(50))
 BEGIN
+	 DECLARE EXIT HANDLER FOR 3819 
+			SELECT CONCAT('OCURRIO UN ERROR AL REGISTRAR ESTUDIANTE') AS MENSAJE;
+            
     IF validardocente(dpi_in) THEN
         SELECT 'DOCENTE YA EXISTE' AS MENSAJE;
     ELSE

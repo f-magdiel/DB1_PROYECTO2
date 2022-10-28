@@ -1,6 +1,9 @@
 DELIMITER $$
 CREATE PROCEDURE crearcurso (codigo_in int, nombre_in VARCHAR(50), cr_necesarios_in int, cr_otorgados_in int, obligatorio_in TINYINT(1), id_carrera_in int)
 BEGIN
+	 DECLARE EXIT HANDLER FOR 3819 
+		SELECT CONCAT('OCURRIO UN ERROR AL CREAR CURSO') AS MENSAJE;
+        
 	IF validarcurso(codigo_in)  THEN
 		SELECT 'CURSO YA EXISTE' AS MENSAJE;
     ELSE

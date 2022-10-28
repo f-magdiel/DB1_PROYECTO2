@@ -3,6 +3,9 @@ CREATE PROCEDURE crearcarrera (carrera_nombre_in varchar(50))
 BEGIN
     -- Validar que exista carrera
     DECLARE cont int;
+    DECLARE EXIT HANDLER FOR 3819 
+		SELECT CONCAT('OCURRIO UN ERROR AL CREAR CARRERA') AS MENSAJE;
+        
     SELECT COUNT(id_carrera)
     INTO cont
     FROM carrera

@@ -1,6 +1,7 @@
 DELIMITER $$
 CREATE PROCEDURE asignarcurso (id_curso_in int, ciclos_in VARCHAR(50), seccion_in VARCHAR(1),carnet_in BIGINT(9))
 BEGIN
+	 
     -- PARA EXEPTION
     
     DECLARE cont int;
@@ -16,6 +17,8 @@ BEGIN
     DECLARE carnet_buscar BIGINT(13);
     DECLARE v_contar int;
     DECLARE id_habili int;
+    DECLARE EXIT HANDLER FOR 3819 
+			SELECT CONCAT('OCURRIO UN ERROR AL ASIGNAR CURSO') AS MENSAJE;
 
 	IF validarcurso(id_curso_in)  THEN
 		

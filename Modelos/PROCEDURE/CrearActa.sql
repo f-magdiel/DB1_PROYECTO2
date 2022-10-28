@@ -1,12 +1,16 @@
 DELIMITER $$
 CREATE PROCEDURE crearacta ( codigo_cur_in int, ciclo_in VARCHAR(50), seccion_in VARCHAR(1))
 BEGIN
+	 
+        
     DECLARE cont int;
     DECLARE cont_habili int;
     DECLARE cont_asig int;
     DECLARE id_habili int;
     DECLARE cont_stu int;
-
+	DECLARE EXIT HANDLER FOR 3819 
+		SELECT CONCAT('OCURRIO UN ERROR AL CREAR ACTA') AS MENSAJE;
+        
 	IF validarcurso(codigo_cur_in) > 0 THEN
         SELECT COUNT(ch.id_curso_habilitado)
         INTO cont
