@@ -18,4 +18,4 @@ BEGIN
 	END IF;
 END$$
 
-CALL  habilitarcurso(1, '1S', 15, 'a',3016980070101,14);
+CALL  habilitarcurso(2, '1S', 15, 'a',3016980070101,16);

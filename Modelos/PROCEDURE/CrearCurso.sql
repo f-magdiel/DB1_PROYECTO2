@@ -15,4 +15,5 @@ BEGIN
 	END IF;
 END$$
 
-CALL crearcurso(14,'logica',50,2,1,13)
+CALL crearcurso(16,'teo2',1,2,1,1);
+

@@ -15,6 +15,8 @@ BEGIN
 	END IF;
 END$$
 
- CALL registroestudiante(201801449, 3275257541405,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',1);
-
+ CALL registroestudiante(201801440, 3275257541407,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',1);
+ 
+INSERT INTO estudiante(carnet, dpi, nombres, apellidos, fecha_nacimiento, correo, telefono, direccion, creditos, fecha_creacion, Carrera_id_carrera)
+VALUES(201801442, 3275257541407,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',100, CURDATE(),1 );
 
