@@ -86,7 +86,7 @@ ENGINE = InnoDB;
 -- Table `FIUSAC`.`Curso_Habilitado`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FIUSAC`.`Curso_Habilitado` (
-  `id_curso_habilitado` INT NOT NULL,
+  `id_curso_habilitado` INT NOT NULL AUTO_INCREMENT,
   `ciclos` VARCHAR(50) NOT NULL,
   `cupo` INT NOT NULL,
   `seccion` VARCHAR(1) NOT NULL,
@@ -116,7 +116,7 @@ ENGINE = InnoDB;
 -- Table `FIUSAC`.`Acta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FIUSAC`.`Acta` (
-  `id_acta` INT NOT NULL, -- incrementaar auto
+  `id_acta` INT NOT NULL AUTO_INCREMENT, -- incrementaar auto
   `Curso_Habilitado_id_curso_habilitado` INT NOT NULL,
   PRIMARY KEY (`id_acta`),
   INDEX `fk_Acta_Curso_Habilitado1_idx` (`Curso_Habilitado_id_curso_habilitado` ASC) VISIBLE,
