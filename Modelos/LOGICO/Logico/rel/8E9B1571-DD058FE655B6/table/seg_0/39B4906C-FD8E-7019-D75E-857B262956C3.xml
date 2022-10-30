@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39B4906C-FD8E-7019-D75E-857B262956C3" name="Docente">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>9257BA48-3012-539E-2616-962AEF6F531E</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Siif" id="4A41213B-8197-4582-BC8C-BC779DC2401E">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>EA392E5C-3D7F-8146-F0CB-48C8237437A7</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dpi" id="A60AC865-69DC-943E-243E-1BD7CC888F1A">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>31261F1A-6A99-37AB-089C-D8D3AE1F08E1</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="37DDCB9E-C68E-43FB-B4D2-91A0CD87E784">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>C7F12B1C-995D-DC6E-7805-5F5F66F4651E</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="2D286395-B5AF-1EE6-25FC-6FE9742D792F">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>1ECB580E-8BFE-DD7D-FC3A-A691340664F7</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Nacimiento" id="6B60E453-7815-24A0-C3B5-36E275682B64">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>349158F8-489E-AAD1-59EA-A4020A9A932B</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="17B883C2-4C5B-55AA-506E-329B9F5B4E56">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>B43C83AA-0271-3125-BBA4-CB1807F9E0CE</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize> CHAR</dataTypeSize>
+<ownDataTypeParameters> CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="7F29124B-8E0C-3F96-28B0-C9E7A28B4DEA">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>62CE47F3-5E6A-07F7-E266-9F9575A0AF0D</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="7ACDCC3D-8167-A89A-E8BC-F4A048636B61">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>0E5F1BCC-C524-2943-4535-2162AC4DA0BF</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize> CHAR</dataTypeSize>
+<ownDataTypeParameters> CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Creacion" id="AB079FE6-CB3C-2EC7-8DD1-10AAE39F954F">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>EB980E1D-A3A6-A699-6569-DF649F29C5D3</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="253AA931-36C9-CDB0-A08E-AFB4559F630B" name="Docente_PK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>2E1D0F1E-C172-2F23-711F-DCCF24EE8CAA</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A41213B-8197-4582-BC8C-BC779DC2401E"/>
+<colUsage columnID="A60AC865-69DC-943E-243E-1BD7CC888F1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

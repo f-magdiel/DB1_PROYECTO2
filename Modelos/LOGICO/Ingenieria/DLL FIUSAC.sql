@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `FIUSAC`.`Carrera` (
   `nombre` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id_carrera`),
   CONSTRAINT CHK_Carrera_nombre CHECK (nombre RLIKE '^([a-z]|[A-Z] )+$'))
-ENGINE = InnoDB;
+ENGINE = InnoDB, AUTO_INCREMENT = 0;
 
 
 -- -----------------------------------------------------
@@ -52,8 +52,8 @@ CREATE TABLE IF NOT EXISTS `FIUSAC`.`Curso` (
   `obligatorio` TINYINT(1) NOT NULL,
   `Carrera_id_carrera` INT NOT NULL,
   PRIMARY KEY (`codigo`),
-  CONSTRAINT CHK_Curso_cr_necesarios CHECK (cr_necesarios>0),
-  CONSTRAINT CHK_Curso_cr_otorgados CHECK (cr_otorgados>0),
+  CONSTRAINT CHK_Curso_cr_necesarios CHECK (cr_necesarios>=0),
+  CONSTRAINT CHK_Curso_cr_otorgados CHECK (cr_otorgados>=0),
   CONSTRAINT CHK_Curos_obligatorio CHECK (obligatorio In (0,1)),
   INDEX `fk_Curso_Carrera1_idx` (`Carrera_id_carrera` ASC) VISIBLE,
   CONSTRAINT `fk_Curso_Carrera1`
@@ -116,7 +116,8 @@ ENGINE = InnoDB;
 -- Table `FIUSAC`.`Acta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FIUSAC`.`Acta` (
-  `id_acta` INT NOT NULL AUTO_INCREMENT, -- incrementaar auto
+  `id_acta` INT NOT NULL AUTO_INCREMENT,
+  `fecha_acta` DATE NOT NULL,
   `Curso_Habilitado_id_curso_habilitado` INT NOT NULL,
   PRIMARY KEY (`id_acta`),
   INDEX `fk_Acta_Curso_Habilitado1_idx` (`Curso_Habilitado_id_curso_habilitado` ASC) VISIBLE,

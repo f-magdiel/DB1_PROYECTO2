@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39387028-E033-508A-D851-5DD743D73BB8" name="Horario_Curso">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>882DF535-037B-52C4-F3DD-99B46AF48383</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Dia" id="5603A508-3D12-59BB-D665-7C3FC17D8465">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>D9090643-6B3D-6EF2-681B-BCA572591E53</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Horario" id="4737A7E5-0136-CC48-A139-9BEC6A1CCB28">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>1D1ED6DF-83E8-DAE5-5A1D-EFC4D52DBDA6</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize> CHAR</dataTypeSize>
+<ownDataTypeParameters> CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_Habilitado_Id" id="86989AD6-B900-9DF6-8F1A-462F41FD69EF">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>D3016A94-D853-EA60-42E1-1DE5D7FFD106</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDFFB3A1-CB6E-B276-E168-5769D512228B" referredColumn="46867421-0F88-9C09-2214-842EE5B8E39C"/>
+</associations>
+</Column>
+<Column name="Estudiante_Carnet" id="243200D3-D51A-A658-E0BB-D7FC410F132E">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>0656FF3B-AAE9-3C32-0445-34C39C782EE5</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D191D9EB-3718-2122-E59A-C35902D620F2" referredColumn="910ED954-6E0D-9875-6A23-B7F0F5F1AB77"/>
+</associations>
+</Column>
+<Column name="Estudiante_Dpi" id="11E79F0E-C976-A393-8305-B32A99E07256">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>3900943D-1510-EC5F-7651-47DD249F2954</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D191D9EB-3718-2122-E59A-C35902D620F2" referredColumn="4302C622-818F-24C5-E00A-2E7D71D61D78"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C94763CB-94CC-2437-7DDE-9AFE22231BF0" name="Horario_Curso_Curso_Habilitado_FK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>0F8102F7-694E-0097-664C-DCAFC2E9B591</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86989AD6-B900-9DF6-8F1A-462F41FD69EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C68A8ED-ECF3-3C92-D57D-BD6C4696E93D" name="Horario_Curso_Estudiante_FK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>D051830D-0C5C-85B3-5C7F-F223AFDBD417</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="243200D3-D51A-A658-E0BB-D7FC410F132E"/>
+<colUsage columnID="11E79F0E-C976-A393-8305-B32A99E07256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

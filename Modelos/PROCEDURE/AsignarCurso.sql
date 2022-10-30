@@ -68,7 +68,7 @@ BEGIN
                     FROM curso c
                     WHERE c.codigo = id_curso_in;
                     
-                    IF carrera_curs IN (0, carrera_estu) THEN
+                    IF carrera_curs IN (1, carrera_estu) THEN
                         -- CURSO Y  CARRERA SI FUNCA
                         -- VALIDAR QUE SI EXISTA CURSO
                         SELECT COUNT(c.codigo)

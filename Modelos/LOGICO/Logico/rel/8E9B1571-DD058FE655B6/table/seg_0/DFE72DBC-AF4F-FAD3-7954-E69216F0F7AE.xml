@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DFE72DBC-AF4F-FAD3-7954-E69216F0F7AE" name="Nota_Estudiante">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>80168789-1A07-D3EB-3BC3-B035F1345C47</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="DCAFCF0B-25E0-E0D4-DE28-697C40BB961E">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>97366B33-A0E2-C6F5-239F-36B56AC95250</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota" id="A7A1A252-56FD-26A8-9813-FADEAC3E2A2D">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>010EA920-48D3-1001-4D9F-CCF5C9A16AD8</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_Habilitado_Id" id="9613BF44-F79C-DEFF-B198-43E77AB3F622">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>26B9B7E2-B4AE-31A1-D2CE-5C38E44A411A</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="069CCD87-DCC9-F252-AC32-05A58657D6FA" referredColumn="46867421-0F88-9C09-2214-842EE5B8E39C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D088755-8B30-EB95-0889-D3216315DFB8" name="Nota_Estudiante_PK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>D7EB1A30-BCB6-6F1D-52B0-D476C508C790</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAFCF0B-25E0-E0D4-DE28-697C40BB961E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D901201-9608-DC00-F4C2-70354DC2A728" name="Nota_Estudiante_Curso_Habilitado_FK">
+<createdBy>Magdiel A</createdBy>
+<createdTime>2022-10-30 18:19:56 UTC</createdTime>
+<generatorID>ACBEED47-9117-34F5-D5E5-C332E3CAC1AC</generatorID>
+<ownerDesignName>Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9613BF44-F79C-DEFF-B198-43E77AB3F622"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

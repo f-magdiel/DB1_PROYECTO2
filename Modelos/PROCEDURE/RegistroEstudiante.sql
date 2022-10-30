@@ -18,8 +18,17 @@ BEGIN
 	END IF;
 END$$
 
- CALL registroestudiante(201801440, 3275257541407,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',1);
+ CALL registroestudiante(201801440, 3275257541415,'Magdiel','Asicona','1990-10-24','magdiela@gmail.com',30063012,'Zona 5',2);
+ CALL registroestudiante(201801441, 3275257541435,'Danny','Cuxum','1991-05-12','dannyc@gmail.com',45616548,'Zona 14',3);
+ CALL registroestudiante(201801442, 3275257541445,'Haroldo','Perez','1995-10-24','haroldop@gmail.com',13248648,'Zona 10',4);
+ CALL registroestudiante(201801443, 3275257541489,'Luis','Losano','1998-01-24','luisl@gmail.com',89546512,'Zona 9',5);
+ CALL registroestudiante(201801444, 3275257541478,'Ben','Ramos','1996-02-14','benram@gmail.com',96545357,'Zona 7',2);
+ CALL registroestudiante(201801445, 3275257541496,'Francisco','Montes','1999-10-15','franciscom@gmail.com',13548657,'Zona 5',3);
+ CALL registroestudiante(201801446, 3275257541417,'Eduardo','Sanchez','1995-09-17','eduardos@gmail.com',96654861,'Zona 10',4);
+ CALL registroestudiante(201801447, 3275257541420,'Edgar','Santos','1997-10-18','edgars@gmail.com',12358966,'Zona 13',5);
+ CALL registroestudiante(201801448, 3275257541430,'William','Cabrera','2000-06-24','willic@gmail.com',89765648,'Zona 12',2);
+ CALL registroestudiante(201801449, 3275257541440,'Marcos','Mateo','2001-12-06','marcosm@gmail.com',45651235,'Zona 1',3);
  
-INSERT INTO estudiante(carnet, dpi, nombres, apellidos, fecha_nacimiento, correo, telefono, direccion, creditos, fecha_creacion, Carrera_id_carrera)
-VALUES(201801442, 3275257541407,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',100, CURDATE(),1 );
+-- INSERT INTO estudiante(carnet, dpi, nombres, apellidos, fecha_nacimiento, correo, telefono, direccion, creditos, fecha_creacion, Carrera_id_carrera)
+-- VALUES(201801442, 3275257541407,'Magdiel','Asicona','2022-10-24','magdiel@gmail.com',30063089,'zona 1',100, CURDATE(),1 );
 

@@ -21,7 +21,6 @@ BEGIN
 	
 END$$
 
-CALL crearcarrera('Ciencias Sistemas');
 CALL crearcarrera('Area Comun');
 CALL crearcarrera('Ingenieria en Ciencias y Sistemas');
 CALL crearcarrera('Ingenieria Civil');
