@@ -1,0 +1,5 @@
+CALL  registrodocente (3016980070101, 1234567890, 'Pedro','Lopez','1990-11-11','pedrol@gmail.com',12451547,'Zona 18');
+CALL  registrodocente (3016980070102, 4565413774, 'Daniel','Perez','1991-01-15','danp@gmail.com',58614589,'Zona 13');
+CALL  registrodocente (3016980070103, 1565489646, 'Julio','Morales','1983-12-23','julioml@gmail.com',12674651,'Zona 14');
+CALL  registrodocente (3016980070104, 6548165498, 'Julia','Lopez','1986-06-12','juliaal@gmail.com',89564357,'Zona 10');
+CALL  registrodocente (3016980070105, 1234546684, 'Mario','Chavez','1989-05-10','marioch@gmail.com',25648948,'Zona 12');
